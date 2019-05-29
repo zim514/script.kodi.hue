@@ -1,0 +1,27 @@
+<addon id="script.service.hue" name="Hue Service" provider-name="zim514" version="0.2.3">
+	
+  <requires>
+    <import addon="xbmc.python" version="2.25.0" />
+    <import addon="script.module.requests" version="2.21.0"/>
+  </requires>
+  
+  <extension  point="xbmc.service" name="service.hue" library="service.py">
+  </extension> 
+  <extension  point="xbmc.python.script" library="default.py">
+  	<provides>executable</provides>
+  </extension>
+  
+  
+  <extension point="xbmc.addon.metadata">
+  
+    <summary lang="en_GB">Philips Hue Lights Service</summary>
+    <description lang="en_GB">Automate your Philips Hue lights with Kodi. Create multi-room scenes and apply them on Play, Pause or Stop.</description>
+    <platform>all</platform>
+    <assets>
+  		<icon>resources/icons/icon.png</icon>
+  		<fanart>resources/icons/fanart.jpg</fanart>
+  	</assets>
+    <source>https://github.com/zim514/script.service.hue</source>
+  </extension>
+  
+</addon>
